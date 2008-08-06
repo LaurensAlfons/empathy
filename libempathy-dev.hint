@@ -1,0 +1,10 @@
+category: Gnome Net
+requires: cygwin libempathy14 glib2-devel libdbus-glib_1-devel gettext libmissioncontrol-client-devel libtelepathy-glib-devel libxml2-devel
+external-source: empathy
+sdesc: "GNOME Telepathy instant messaging library (core devel)"
+ldesc: "Empathy consists of a rich set of reusable instant messaging 
+widgets, and a GNOME client using those widgets. It uses Telepathy and 
+Nokia's Mission Control, and reuses Gossip's UI. The main goal is to 
+permit desktop integration by providing libempathy and libempathy-gtk 
+libraries. libempathy-gtk is a set of powerful widgets that can be 
+embeded into any GNOME application."
