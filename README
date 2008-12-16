@@ -9,23 +9,23 @@ embeded into any GNOME application.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  enchant-1.4.2-1
-  evolution-data-server-2.22.2-1
-  GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.11-1
-  glib2-2.16.4-1
-  gnome-panel-2.22.2-1
-  gtk2-x11-2.12.11-1
-  libdbus-glib_1_2-0.76-1
-  libglade2-2.6.2-1
-  libgnome2-2.22.0-1
-  libgnomeui2-2.22.1-1
-  libintl8-0.15-1
-  libmissioncontrol-client0-4.65-1
-  libtelepathy-glib0-0.7.0-1
-  libX11_6-1.1.3-1
-  libxml2-2.6.32-1
-  pango-1.20.5-1
+  gnome-panel-2.24.2-1
+  libdbus-glib_1_2-0.78-1
+  libebook1.2_9-2.24.2-1
+  libenchant1-1.4.2-2
+  libgconf2_4-2.24.0-1
+  libgdk_pixbuf2.0_0-2.14.5-1
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.3-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgtk2.0_0-2.14.5-1
+  libintl8-0.17-2
+  libmissioncontrol-client0-4.67-1
+  libpango1.0_0-1.22.3-1
+  libtelepathy-glib0-0.7.20-1
+  libX11_6-1.1.5-1
+  libxml2-2.7.2-1
   telepathy-mission-control
 (python bindings)
   python-2.5.2-2
@@ -61,22 +61,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack empathy-2.23.6-X-src.tar.bz2
+  unpack empathy-2.24.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./empathy-2.23.6-X.cygport all
+  cygport ./empathy-2.24.1-X.cygport all
 
 This will create:
-  /usr/src/empathy-2.23.6-X-src.tar.bz2
-  /usr/src/empathy-2.23.6-X.tar.bz2
-  /usr/src/libempathy-common-2.23.6-X.tar.bz2
-  /usr/src/libempathy-devel-2.23.6-X.tar.bz2
-  /usr/src/libempathy-gtk-devel-2.23.6-X.tar.bz2
-  /usr/src/libempathy-gtk15-2.23.6-X.tar.bz2
-  /usr/src/libempathy14-2.23.6-X.tar.bz2
-  /usr/src/pyton-empathy-2.23.6-X.tar.bz2
-  /usr/src/pyton-empathygtk-2.23.6-X.tar.bz2
+  /usr/src/empathy-2.24.1-X-src.tar.bz2
+  /usr/src/empathy-2.24.1-X.tar.bz2
+  /usr/src/libempathy-common-2.24.1-X.tar.bz2
+  /usr/src/libempathy-devel-2.24.1-X.tar.bz2
+  /usr/src/libempathy-gtk-devel-2.24.1-X.tar.bz2
+  /usr/src/libempathy-gtk15-2.24.1-X.tar.bz2
+  /usr/src/libempathy14-2.24.1-X.tar.bz2
+  /usr/src/pyton-empathy-2.24.1-X.tar.bz2
+  /usr/src/pyton-empathygtk-2.24.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -93,22 +93,24 @@ Files included in the binary packages:
   /usr/lib/bonobo/servers/GNOME_NotHere_Applet.server
   /usr/lib/panel-2.0/megaphone-applet.exe
   /usr/lib/panel-2.0/nothere-applet.exe
-  /usr/share/applications/empathy-properties.desktop
   /usr/share/applications/empathy.desktop
-  /usr/share/doc/empathy-2.23.6/AUTHORS
-  /usr/share/doc/empathy-2.23.6/CONTRIBUTORS
-  /usr/share/doc/empathy-2.23.6/COPYING
-  /usr/share/doc/empathy-2.23.6/ChangeLog
-  /usr/share/doc/empathy-2.23.6/INSTALL
-  /usr/share/doc/empathy-2.23.6/NEWS
-  /usr/share/doc/empathy-2.23.6/README
-  /usr/share/doc/empathy-2.23.6/TODO
+  /usr/share/doc/empathy-2.24.1/AUTHORS
+  /usr/share/doc/empathy-2.24.1/CONTRIBUTORS
+  /usr/share/doc/empathy-2.24.1/COPYING
+  /usr/share/doc/empathy-2.24.1/ChangeLog
+  /usr/share/doc/empathy-2.24.1/INSTALL
+  /usr/share/doc/empathy-2.24.1/NEWS
+  /usr/share/doc/empathy-2.24.1/README
+  /usr/share/doc/empathy-2.24.1/TODO
   /usr/share/empathy/GNOME_Megaphone_Applet.xml
   /usr/share/empathy/GNOME_NotHere_Applet.xml
   /usr/share/gnome/help/empathy/C/empathy.xml
   /usr/share/gnome/help/empathy/C/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/C/figures/empathy-new-account.png
   /usr/share/gnome/help/empathy/C/legal.xml
+  /usr/share/gnome/help/empathy/cs/empathy.xml
+  /usr/share/gnome/help/empathy/cs/figures/empathy-main-window.png
+  /usr/share/gnome/help/empathy/cs/figures/empathy-new-account.png
   /usr/share/gnome/help/empathy/de/empathy.xml
   /usr/share/gnome/help/empathy/de/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/de/figures/empathy-new-account.png
@@ -118,6 +120,9 @@ Files included in the binary packages:
   /usr/share/gnome/help/empathy/fr/empathy.xml
   /usr/share/gnome/help/empathy/fr/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/fr/figures/empathy-new-account.png
+  /usr/share/gnome/help/empathy/it/empathy.xml
+  /usr/share/gnome/help/empathy/it/figures/empathy-main-window.png
+  /usr/share/gnome/help/empathy/it/figures/empathy-new-account.png
   /usr/share/gnome/help/empathy/sv/empathy.xml
   /usr/share/gnome/help/empathy/sv/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/sv/figures/empathy-new-account.png
@@ -129,12 +134,14 @@ Files included in the binary packages:
   /usr/share/icons/hicolor/scalable/apps/empathy.svg
   /usr/share/man/man1/empathy.1.gz
   /usr/share/omf/empathy/empathy-C.omf
+  /usr/share/omf/empathy/empathy-cs.omf
   /usr/share/omf/empathy/empathy-de.omf
   /usr/share/omf/empathy/empathy-es.omf
   /usr/share/omf/empathy/empathy-fr.omf
+  /usr/share/omf/empathy/empathy-it.omf
   /usr/share/omf/empathy/empathy-sv.omf
 
-(libtelepathy-common)
+(libempathy-common)
   /usr/share/empathy/empathy-account-widget-aim.glade
   /usr/share/empathy/empathy-account-widget-generic.glade
   /usr/share/empathy/empathy-account-widget-groupwise.glade
@@ -304,6 +311,7 @@ Files included in the binary packages:
   /usr/share/mission-control/profiles/aim.profile
   /usr/share/mission-control/profiles/ekiga.profile
   /usr/share/mission-control/profiles/fwd.profile
+  /usr/share/mission-control/profiles/gadugadu.profile
   /usr/share/mission-control/profiles/groupwise.profile
   /usr/share/mission-control/profiles/gtalk.profile
   /usr/share/mission-control/profiles/icq.profile
@@ -311,6 +319,7 @@ Files included in the binary packages:
   /usr/share/mission-control/profiles/jabber.profile
   /usr/share/mission-control/profiles/msn-haze.profile
   /usr/share/mission-control/profiles/msn.profile
+  /usr/share/mission-control/profiles/qq.profile
   /usr/share/mission-control/profiles/salut.profile
   /usr/share/mission-control/profiles/sipphone.profile
   /usr/share/mission-control/profiles/sofiasip.profile
@@ -486,6 +495,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.1-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 2.23.6-1 -----
 Version bump.

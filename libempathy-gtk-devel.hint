@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin libempathy-gtk15 enchant-devel GConf2-devel glib2-devel gdk-pixbuf2-devel gtk2-x11-devel libdbus-glib_1-devel libempathy-devel libglade2-devel gettext libmissioncontrol-client-devel libtelepathy-glib-devel libX11-devel pango-devel
+requires: cygwin libempathy-gtk15 libenchant-devel libgconf2-devel libglib2.0-devel libgdk_pixbuf2.0-devel libgtk2.0-devel libdbus-glib_1-devel libempathy-devel libglade2.0-devel gettext libmissioncontrol-client-devel libtelepathy-glib-devel libX11-devel libpango1.0-devel
 external-source: empathy
 sdesc: "GNOME Telepathy instant messaging library (GTK+ devel)"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 

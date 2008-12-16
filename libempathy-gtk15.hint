@@ -1,7 +1,7 @@
 category: Gnome Net
-requires: cygwin glib2 libempathy14 python python-gobject2
+requires: cygwin libenchant1 libgconf2_4 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk2.0_0 gvfs libdbus-glib_1_2 libempathy-common libempathy14 libglade2.0_0 libintl8 libmissioncontrol-client0 libtelepathy-glib0 libX11_6 libpango1.0_0
 external-source: empathy
-sdesc: "GNOME Telepathy instant messaging Python bindings"
+sdesc: "GNOME Telepathy instant messaging library (GTK+ runtime)"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 
 widgets, and a GNOME client using those widgets. It uses Telepathy and 
 Nokia's Mission Control, and reuses Gossip's UI. The main goal is to 
