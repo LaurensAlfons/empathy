@@ -5,18 +5,18 @@ HOMEPAGE="http://live.gnome.org/Empathy"
 
 PATCH_URI="0.23.4-no-undefined.patch"
 
-PKG_NAMES="${PN} libempathy-common libempathy14 libempathy-devel
-           libempathy-gtk15 libempathy-gtk-devel python-empathy python-empathygtk"
+PKG_NAMES="${PN} libempathy-common libempathy23 libempathy-devel
+           libempathy-gtk19 libempathy-gtk-devel python-empathy python-empathygtk"
 empathy_CONTENTS="etc/ usr/bin/*.exe usr/lib/bonobo/ usr/lib/panel-2.0/
                   usr/share/applications/ usr/share/doc/
                   usr/share/${PN}/GNOME_*.xml usr/share/gnome/
                   usr/share/icons/ usr/share/man/ usr/share/omf/"
 libempathy_common_CONTENTS="--exclude=GNOME_*.xml usr/share/${PN}/
                             usr/share/locale/ usr/share/mission-control/"
-libempathy14_CONTENTS="usr/bin/cygempathy-14.dll"
+libempathy23_CONTENTS="usr/bin/cygempathy-23.dll"
 libempathy_devel_CONTENTS="usr/include/libempathy/ usr/lib/libempathy.*
                            usr/lib/pkgconfig/libempathy.pc usr/share/gtk-doc/html/libempathy/"
-libempathy_gtk15_CONTENTS="usr/bin/cygempathy-gtk-15.dll"
+libempathy_gtk19_CONTENTS="usr/bin/cygempathy-gtk-19.dll"
 libempathy_gtk_devel_CONTENTS="usr/include/libempathy-gtk/ usr/lib/libempathy-gtk.*
                                usr/lib/pkgconfig/libempathy-gtk.pc usr/share/gtk-doc/html/libempathy-gtk/"
 python_empathy_CONTENTS="${PYTHON_SITELIB#/}/empathy.*"

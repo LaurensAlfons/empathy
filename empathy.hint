@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin GConf2 libebook1.2_9 libglib2.0_0 libgdk_pixbuf2.0_0 libgtk2.0_0 libempathy14 libempathy-gtk15 libglade2.0_0 libintl8 libpango1.0_0 libmissioncontrol-client0 libtelepathy-glib0 telepathy-mission-control
+requires: cygwin GConf2 libdbus-glib_1_2 libebook1.2_9 libempathy23 libempathy-gtk19 libgcc1 libglade2.0_0 libglib2.0_0 libgdk_pixbuf2.0_0 libgstreamer0.10_0 libgtk2.0_0 libintl8 libmissioncontrol-client0 libnotify1 libpango1.0_0 libtelepathy-glib0 libxml2 telepathy-mission-control
 sdesc: "GNOME Telepathy instant messaging client"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 
 widgets, and a GNOME client using those widgets. It uses Telepathy and 

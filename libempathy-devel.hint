@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin libempathy14 libdbus-glib_1-devel libglib2.0-devel gettext libmissioncontrol-client-devel libtelepathy-glib-devel libxml2-devel
+requires: cygwin libempathy23 libdbus-glib_1-devel libglib2.0-devel libgstfarsight0.10-devel libgstreamer0.10-devel gettext libmissioncontrol-client-devel libtelepathy-farsight-devel libtelepathy-glib-devel libxml2-devel
 external-source: empathy
 sdesc: "GNOME Telepathy instant messaging library (core devel)"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 

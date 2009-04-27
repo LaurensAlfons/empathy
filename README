@@ -8,48 +8,54 @@ libraries. libempathy-gtk is a set of powerful widgets that can be
 embeded into any GNOME application.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  gnome-panel-2.24.2-1
-  libdbus-glib_1_2-0.78-1
-  libebook1.2_9-2.24.2-1
-  libenchant1-1.4.2-2
-  libgconf2_4-2.24.0-1
-  libgdk_pixbuf2.0_0-2.14.5-1
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.3-1
-  libgnome2_0-2.24.1-1
-  libgnomeui2_0-2.24.0-1
-  libgtk2.0_0-2.14.5-1
-  libintl8-0.17-2
-  libmissioncontrol-client0-4.67-1
-  libpango1.0_0-1.22.3-1
-  libtelepathy-glib0-0.7.20-1
-  libX11_6-1.1.5-1
-  libxml2-2.7.2-1
+  cygwin-1.7.0-45
+  libbonobo2_0-2.24.1-1
+  libcanberra-gtk0-0.12-1
+  libcanberra0-0.12-1
+  libdbus-glib_1_2-0.80-10
+  libebook1.2_9-2.26.1.1-1
+  libenchant1-1.4.2-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.1-1
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.1-1
+  libgstfarsight0.10_0-0.0.9-1
+  libgstinterfaces0.10_0-0.10.22-10
+  libgstreamer0.10_0-0.10.22-10
+  libgtk2.0_0-2.16.1-1
+  libintl8-0.17-10
+  libmissioncontrol-client0-4.67-10
+  libnotify1-0.4.5-10
+  libpanel-applet2_0-2.26.1-1
+  libpango1.0_0-1.24.1-1
+  libtelepathy-farsight0-0.0.6-1
+  libtelepathy-glib0-0.7.28-1
+  libX11_6-1.2-10
+  libxml2-2.7.3-10
   telepathy-mission-control
 (python bindings)
-  python-2.5.2-2
-  python-gobject2-2.14.2-1
-  python-gtk2-2.12.1-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-2
-  cygport-0.3.12-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gettext-devel-0.15-1
-  glib2-devel-2.16.4-1
-  gnome-common-2.20.0-2
-  gnome-doc-utils-0.12.2-1
-  gtk-doc-1.10-1
-  intltool-0.40.3-1
-  libtool-2.2.2-2
-  make-3.81-1
-  pkg-config-0.23a-2
-  rarian-0.8.0-1
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gettext-devel-0.17-10
+  gnome-common-2.26.0-1
+  gnome-doc-utils-0.16.1-1
+  gtk-doc-1.11-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
+  rarian-0.8.1-10
   sed-4.1.5-2
 
 Canonical website:
@@ -61,22 +67,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack empathy-2.24.1-X-src.tar.bz2
+  unpack empathy-2.26.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./empathy-2.24.1-X.cygport all
+  cygport ./empathy-2.26.1-X.cygport all
 
 This will create:
-  /usr/src/empathy-2.24.1-X-src.tar.bz2
-  /usr/src/empathy-2.24.1-X.tar.bz2
-  /usr/src/libempathy-common-2.24.1-X.tar.bz2
-  /usr/src/libempathy-devel-2.24.1-X.tar.bz2
-  /usr/src/libempathy-gtk-devel-2.24.1-X.tar.bz2
-  /usr/src/libempathy-gtk15-2.24.1-X.tar.bz2
-  /usr/src/libempathy14-2.24.1-X.tar.bz2
-  /usr/src/pyton-empathy-2.24.1-X.tar.bz2
-  /usr/src/pyton-empathygtk-2.24.1-X.tar.bz2
+  /usr/src/empathy-2.26.1-X-src.tar.bz2
+  /usr/src/empathy-2.26.1-X.tar.bz2
+  /usr/src/libempathy-common-2.26.1-X.tar.bz2
+  /usr/src/libempathy-devel-2.26.1-X.tar.bz2
+  /usr/src/libempathy-gtk-devel-2.26.1-X.tar.bz2
+  /usr/src/libempathy-gtk19-2.26.1-X.tar.bz2
+  /usr/src/libempathy23-2.26.1-X.tar.bz2
+  /usr/src/pyton-empathy-2.26.1-X.tar.bz2
+  /usr/src/pyton-empathygtk-2.26.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -94,38 +100,40 @@ Files included in the binary packages:
   /usr/lib/panel-2.0/megaphone-applet.exe
   /usr/lib/panel-2.0/nothere-applet.exe
   /usr/share/applications/empathy.desktop
-  /usr/share/doc/empathy-2.24.1/AUTHORS
-  /usr/share/doc/empathy-2.24.1/CONTRIBUTORS
-  /usr/share/doc/empathy-2.24.1/COPYING
-  /usr/share/doc/empathy-2.24.1/ChangeLog
-  /usr/share/doc/empathy-2.24.1/INSTALL
-  /usr/share/doc/empathy-2.24.1/NEWS
-  /usr/share/doc/empathy-2.24.1/README
-  /usr/share/doc/empathy-2.24.1/TODO
+  /usr/share/doc/empathy/AUTHORS
+  /usr/share/doc/empathy/CONTRIBUTORS
+  /usr/share/doc/empathy/COPYING
+  /usr/share/doc/empathy/ChangeLog
+  /usr/share/doc/empathy/NEWS
+  /usr/share/doc/empathy/README
+  /usr/share/doc/empathy/TODO
   /usr/share/empathy/GNOME_Megaphone_Applet.xml
   /usr/share/empathy/GNOME_NotHere_Applet.xml
   /usr/share/gnome/help/empathy/C/empathy.xml
   /usr/share/gnome/help/empathy/C/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/C/figures/empathy-new-account.png
   /usr/share/gnome/help/empathy/C/legal.xml
+  /usr/share/gnome/help/empathy/ca/empathy.xml
+  /usr/share/gnome/help/empathy/ca/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/cs/empathy.xml
   /usr/share/gnome/help/empathy/cs/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/cs/figures/empathy-new-account.png
   /usr/share/gnome/help/empathy/de/empathy.xml
   /usr/share/gnome/help/empathy/de/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/de/figures/empathy-new-account.png
+  /usr/share/gnome/help/empathy/el/empathy.xml
+  /usr/share/gnome/help/empathy/el/figures/empathy-main-window.png
+  /usr/share/gnome/help/empathy/en_GB/empathy.xml
+  /usr/share/gnome/help/empathy/en_GB/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/es/empathy.xml
   /usr/share/gnome/help/empathy/es/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/es/figures/empathy-new-account.png
+  /usr/share/gnome/help/empathy/fi/empathy.xml
+  /usr/share/gnome/help/empathy/fi/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/fr/empathy.xml
   /usr/share/gnome/help/empathy/fr/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/fr/figures/empathy-new-account.png
   /usr/share/gnome/help/empathy/it/empathy.xml
   /usr/share/gnome/help/empathy/it/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/it/figures/empathy-new-account.png
+  /usr/share/gnome/help/empathy/ru/empathy.xml
+  /usr/share/gnome/help/empathy/ru/figures/empathy-main-window.png
   /usr/share/gnome/help/empathy/sv/empathy.xml
   /usr/share/gnome/help/empathy/sv/figures/empathy-main-window.png
-  /usr/share/gnome/help/empathy/sv/figures/empathy-new-account.png
   /usr/share/icons/hicolor/16x16/apps/empathy.png
   /usr/share/icons/hicolor/22x22/apps/empathy.png
   /usr/share/icons/hicolor/24x24/apps/empathy.png
@@ -134,11 +142,16 @@ Files included in the binary packages:
   /usr/share/icons/hicolor/scalable/apps/empathy.svg
   /usr/share/man/man1/empathy.1.gz
   /usr/share/omf/empathy/empathy-C.omf
+  /usr/share/omf/empathy/empathy-ca.omf
   /usr/share/omf/empathy/empathy-cs.omf
   /usr/share/omf/empathy/empathy-de.omf
+  /usr/share/omf/empathy/empathy-el.omf
+  /usr/share/omf/empathy/empathy-en_GB.omf
   /usr/share/omf/empathy/empathy-es.omf
+  /usr/share/omf/empathy/empathy-fi.omf
   /usr/share/omf/empathy/empathy-fr.omf
   /usr/share/omf/empathy/empathy-it.omf
+  /usr/share/omf/empathy/empathy-ru.omf
   /usr/share/omf/empathy/empathy-sv.omf
 
 (libempathy-common)
@@ -161,6 +174,8 @@ Files included in the binary packages:
   /usr/share/empathy/empathy-contact-dialogs.glade
   /usr/share/empathy/empathy-contact-groups.dtd
   /usr/share/empathy/empathy-contact-widget.glade
+  /usr/share/empathy/empathy-ft-manager.glade
+  /usr/share/empathy/empathy-import-dialog.glade
   /usr/share/empathy/empathy-irc-networks.dtd
   /usr/share/empathy/empathy-log-manager.xsl
   /usr/share/empathy/empathy-log-window.glade
@@ -174,11 +189,13 @@ Files included in the binary packages:
   /usr/share/empathy/empathy-status-presets.dtd
   /usr/share/empathy/icons/hicolor/16x16/actions/im-message-new.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-ekiga.png
+  /usr/share/empathy/icons/hicolor/16x16/apps/im-gadugadu.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-gizmo.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-google-talk.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-irc.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-local-xmpp.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-msn.png
+  /usr/share/empathy/icons/hicolor/16x16/apps/im-qq.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-sip.png
   /usr/share/empathy/icons/hicolor/16x16/apps/im-xmpp.png
   /usr/share/empathy/icons/hicolor/16x16/status/empathy-available.png
@@ -191,11 +208,13 @@ Files included in the binary packages:
   /usr/share/empathy/icons/hicolor/16x16/status/user-typing.png
   /usr/share/empathy/icons/hicolor/22x22/actions/im-message-new.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-ekiga.png
+  /usr/share/empathy/icons/hicolor/22x22/apps/im-gadugadu.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-gizmo.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-google-talk.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-irc.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-local-xmpp.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-msn.png
+  /usr/share/empathy/icons/hicolor/22x22/apps/im-qq.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-sip.png
   /usr/share/empathy/icons/hicolor/22x22/apps/im-xmpp.png
   /usr/share/empathy/icons/hicolor/22x22/status/empathy-available.png
@@ -206,11 +225,13 @@ Files included in the binary packages:
   /usr/share/empathy/icons/hicolor/22x22/status/empathy-pending.png
   /usr/share/empathy/icons/hicolor/24x24/actions/im-message-new.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-ekiga.png
+  /usr/share/empathy/icons/hicolor/24x24/apps/im-gadugadu.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-gizmo.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-google-talk.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-irc.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-local-xmpp.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-msn.png
+  /usr/share/empathy/icons/hicolor/24x24/apps/im-qq.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-sip.png
   /usr/share/empathy/icons/hicolor/24x24/apps/im-xmpp.png
   /usr/share/empathy/icons/hicolor/24x24/status/empathy-available.png
@@ -220,11 +241,13 @@ Files included in the binary packages:
   /usr/share/empathy/icons/hicolor/24x24/status/empathy-offline.png
   /usr/share/empathy/icons/hicolor/24x24/status/empathy-pending.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-ekiga.png
+  /usr/share/empathy/icons/hicolor/32x32/apps/im-gadugadu.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-gizmo.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-google-talk.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-irc.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-local-xmpp.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-msn.png
+  /usr/share/empathy/icons/hicolor/32x32/apps/im-qq.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-sip.png
   /usr/share/empathy/icons/hicolor/32x32/apps/im-xmpp.png
   /usr/share/empathy/icons/hicolor/32x32/status/empathy-available.png
@@ -234,11 +257,13 @@ Files included in the binary packages:
   /usr/share/empathy/icons/hicolor/32x32/status/empathy-offline.png
   /usr/share/empathy/icons/hicolor/32x32/status/empathy-pending.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-ekiga.png
+  /usr/share/empathy/icons/hicolor/48x48/apps/im-gadugadu.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-gizmo.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-google-talk.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-irc.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-local-xmpp.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-msn.png
+  /usr/share/empathy/icons/hicolor/48x48/apps/im-qq.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-sip.png
   /usr/share/empathy/icons/hicolor/48x48/apps/im-xmpp.png
   /usr/share/empathy/icons/hicolor/48x48/status/empathy-available.png
@@ -248,11 +273,13 @@ Files included in the binary packages:
   /usr/share/empathy/icons/hicolor/48x48/status/empathy-offline.png
   /usr/share/empathy/icons/hicolor/48x48/status/empathy-pending.png
   /usr/share/empathy/icons/hicolor/scalable/apps/im-ekiga.svg
+  /usr/share/empathy/icons/hicolor/scalable/apps/im-gadugadu.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-gizmo.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-google-talk.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-irc.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-local-xmpp.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-msn.svg
+  /usr/share/empathy/icons/hicolor/scalable/apps/im-qq.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-sip.svg
   /usr/share/empathy/icons/hicolor/scalable/apps/im-xmpp.svg
   /usr/share/empathy/icons/hicolor/scalable/status/empathy-available.svg
@@ -263,8 +290,11 @@ Files included in the binary packages:
   /usr/share/empathy/icons/hicolor/scalable/status/empathy-pending.svg
   /usr/share/empathy/irc-networks.xml
   /usr/share/locale/ar/LC_MESSAGES/empathy.mo
+  /usr/share/locale/as/LC_MESSAGES/empathy.mo
   /usr/share/locale/az/LC_MESSAGES/empathy.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/empathy.mo
   /usr/share/locale/bg/LC_MESSAGES/empathy.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/empathy.mo
   /usr/share/locale/ca/LC_MESSAGES/empathy.mo
   /usr/share/locale/cs/LC_MESSAGES/empathy.mo
   /usr/share/locale/cy/LC_MESSAGES/empathy.mo
@@ -281,27 +311,43 @@ Files included in the binary packages:
   /usr/share/locale/fr/LC_MESSAGES/empathy.mo
   /usr/share/locale/ga/LC_MESSAGES/empathy.mo
   /usr/share/locale/gl/LC_MESSAGES/empathy.mo
+  /usr/share/locale/gu/LC_MESSAGES/empathy.mo
   /usr/share/locale/he/LC_MESSAGES/empathy.mo
+  /usr/share/locale/hi/LC_MESSAGES/empathy.mo
   /usr/share/locale/hr/LC_MESSAGES/empathy.mo
   /usr/share/locale/hu/LC_MESSAGES/empathy.mo
   /usr/share/locale/it/LC_MESSAGES/empathy.mo
   /usr/share/locale/ja/LC_MESSAGES/empathy.mo
+  /usr/share/locale/kn/LC_MESSAGES/empathy.mo
+  /usr/share/locale/ko/LC_MESSAGES/empathy.mo
+  /usr/share/locale/ku/LC_MESSAGES/empathy.mo
   /usr/share/locale/lt/LC_MESSAGES/empathy.mo
+  /usr/share/locale/lv/LC_MESSAGES/empathy.mo
+  /usr/share/locale/mai/LC_MESSAGES/empathy.mo
+  /usr/share/locale/mk/LC_MESSAGES/empathy.mo
   /usr/share/locale/ml/LC_MESSAGES/empathy.mo
+  /usr/share/locale/mr/LC_MESSAGES/empathy.mo
   /usr/share/locale/ms/LC_MESSAGES/empathy.mo
   /usr/share/locale/nb/LC_MESSAGES/empathy.mo
   /usr/share/locale/ne/LC_MESSAGES/empathy.mo
   /usr/share/locale/nl/LC_MESSAGES/empathy.mo
   /usr/share/locale/oc/LC_MESSAGES/empathy.mo
+  /usr/share/locale/or/LC_MESSAGES/empathy.mo
+  /usr/share/locale/pa/LC_MESSAGES/empathy.mo
   /usr/share/locale/pl/LC_MESSAGES/empathy.mo
+  /usr/share/locale/ps/LC_MESSAGES/empathy.mo
   /usr/share/locale/pt/LC_MESSAGES/empathy.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/empathy.mo
+  /usr/share/locale/ro/LC_MESSAGES/empathy.mo
   /usr/share/locale/ru/LC_MESSAGES/empathy.mo
   /usr/share/locale/sl/LC_MESSAGES/empathy.mo
   /usr/share/locale/sq/LC_MESSAGES/empathy.mo
   /usr/share/locale/sr/LC_MESSAGES/empathy.mo
-  /usr/share/locale/sr@Latn/LC_MESSAGES/empathy.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/empathy.mo
   /usr/share/locale/sv/LC_MESSAGES/empathy.mo
+  /usr/share/locale/ta/LC_MESSAGES/empathy.mo
+  /usr/share/locale/te/LC_MESSAGES/empathy.mo
+  /usr/share/locale/th/LC_MESSAGES/empathy.mo
   /usr/share/locale/tr/LC_MESSAGES/empathy.mo
   /usr/share/locale/uk/LC_MESSAGES/empathy.mo
   /usr/share/locale/vi/LC_MESSAGES/empathy.mo
@@ -325,21 +371,26 @@ Files included in the binary packages:
   /usr/share/mission-control/profiles/sofiasip.profile
   /usr/share/mission-control/profiles/yahoo.profile
 
-(libempathy14)
-  /usr/bin/cygempathy-14.dll
+(libempathy23)
+  /usr/bin/cygempathy-23.dll
   
-(libempathy-gtk15)
-  /usr/bin/cygempathy-gtk-15.dll
+(libempathy-gtk19)
+  /usr/bin/cygempathy-gtk-19.dll
 
 (libempathy-devel)
+  /usr/include/libempathy/empathy-account-manager.h
+  /usr/include/libempathy/empathy-call-factory.h
+  /usr/include/libempathy/empathy-call-handler.h
   /usr/include/libempathy/empathy-chatroom-manager.h
   /usr/include/libempathy/empathy-chatroom.h
   /usr/include/libempathy/empathy-contact-factory.h
   /usr/include/libempathy/empathy-contact-groups.h
   /usr/include/libempathy/empathy-contact-list.h
   /usr/include/libempathy/empathy-contact-manager.h
+  /usr/include/libempathy/empathy-contact-monitor.h
   /usr/include/libempathy/empathy-contact.h
   /usr/include/libempathy/empathy-debug.h
+  /usr/include/libempathy/empathy-dispatch-operation.h
   /usr/include/libempathy/empathy-dispatcher.h
   /usr/include/libempathy/empathy-enum-types.h
   /usr/include/libempathy/empathy-idle.h
@@ -347,6 +398,8 @@ Files included in the binary packages:
   /usr/include/libempathy/empathy-irc-network.h
   /usr/include/libempathy/empathy-irc-server.h
   /usr/include/libempathy/empathy-log-manager.h
+  /usr/include/libempathy/empathy-log-store-empathy.h
+  /usr/include/libempathy/empathy-log-store.h
   /usr/include/libempathy/empathy-message.h
   /usr/include/libempathy/empathy-status-presets.h
   /usr/include/libempathy/empathy-time.h
@@ -354,30 +407,39 @@ Files included in the binary packages:
   /usr/include/libempathy/empathy-tp-chat.h
   /usr/include/libempathy/empathy-tp-contact-factory.h
   /usr/include/libempathy/empathy-tp-contact-list.h
+  /usr/include/libempathy/empathy-tp-file.h
   /usr/include/libempathy/empathy-tp-group.h
   /usr/include/libempathy/empathy-tp-roomlist.h
   /usr/include/libempathy/empathy-tp-tube.h
   /usr/include/libempathy/empathy-tube-handler.h
+  /usr/include/libempathy/empathy-types.h
   /usr/include/libempathy/empathy-utils.h
   /usr/lib/libempathy.dll.a
   /usr/lib/libempathy.la
   /usr/lib/pkgconfig/libempathy.pc
+  /usr/share/gtk-doc/html/libempathy/EmpathyAccountManager.html
+  /usr/share/gtk-doc/html/libempathy/EmpathyCallFactory.html
+  /usr/share/gtk-doc/html/libempathy/EmpathyCallHandler.html
   /usr/share/gtk-doc/html/libempathy/EmpathyChatroom.html
   /usr/share/gtk-doc/html/libempathy/EmpathyChatroomManager.html
   /usr/share/gtk-doc/html/libempathy/EmpathyContact.html
   /usr/share/gtk-doc/html/libempathy/EmpathyContactFactory.html
   /usr/share/gtk-doc/html/libempathy/EmpathyContactManager.html
+  /usr/share/gtk-doc/html/libempathy/EmpathyContactMonitor.html
+  /usr/share/gtk-doc/html/libempathy/EmpathyDispatchOperation.html
   /usr/share/gtk-doc/html/libempathy/EmpathyDispatcher.html
   /usr/share/gtk-doc/html/libempathy/EmpathyIdle.html
   /usr/share/gtk-doc/html/libempathy/EmpathyIrcNetwork.html
   /usr/share/gtk-doc/html/libempathy/EmpathyIrcNetworkManager.html
   /usr/share/gtk-doc/html/libempathy/EmpathyIrcServer.html
   /usr/share/gtk-doc/html/libempathy/EmpathyLogManager.html
+  /usr/share/gtk-doc/html/libempathy/EmpathyLogStoreEmpathy.html
   /usr/share/gtk-doc/html/libempathy/EmpathyMessage.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpCall.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpChat.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpContactFactory.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpContactList.html
+  /usr/share/gtk-doc/html/libempathy/EmpathyTpFile.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpGroup.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpRoomlist.html
   /usr/share/gtk-doc/html/libempathy/EmpathyTpTube.html
@@ -390,8 +452,10 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/libempathy/libempathy-empathy-contact-groups.html
   /usr/share/gtk-doc/html/libempathy/libempathy-empathy-contact-list.html
   /usr/share/gtk-doc/html/libempathy/libempathy-empathy-enum-types.html
+  /usr/share/gtk-doc/html/libempathy/libempathy-empathy-log-store.html
   /usr/share/gtk-doc/html/libempathy/libempathy-empathy-status-presets.html
   /usr/share/gtk-doc/html/libempathy/libempathy-empathy-time.html
+  /usr/share/gtk-doc/html/libempathy/libempathy-empathy-types.html
   /usr/share/gtk-doc/html/libempathy/libempathy-empathy-utils.html
   /usr/share/gtk-doc/html/libempathy/libempathy-hierarchy.html
   /usr/share/gtk-doc/html/libempathy/libempathy.devhelp
@@ -408,12 +472,14 @@ Files included in the binary packages:
   /usr/include/libempathy-gtk/empathy-account-widget-irc.h
   /usr/include/libempathy-gtk/empathy-account-widget-sip.h
   /usr/include/libempathy-gtk/empathy-account-widget.h
-  /usr/include/libempathy-gtk/empathy-accounts-dialog.h
+  /usr/include/libempathy-gtk/empathy-audio-sink.h
+  /usr/include/libempathy-gtk/empathy-audio-src.h
   /usr/include/libempathy-gtk/empathy-avatar-chooser.h
   /usr/include/libempathy-gtk/empathy-avatar-image.h
   /usr/include/libempathy-gtk/empathy-cell-renderer-activatable.h
   /usr/include/libempathy-gtk/empathy-cell-renderer-expander.h
   /usr/include/libempathy-gtk/empathy-cell-renderer-text.h
+  /usr/include/libempathy-gtk/empathy-chat-text-view.h
   /usr/include/libempathy-gtk/empathy-chat-view.h
   /usr/include/libempathy-gtk/empathy-chat.h
   /usr/include/libempathy-gtk/empathy-conf.h
@@ -421,6 +487,7 @@ Files included in the binary packages:
   /usr/include/libempathy-gtk/empathy-contact-list-store.h
   /usr/include/libempathy-gtk/empathy-contact-list-view.h
   /usr/include/libempathy-gtk/empathy-contact-menu.h
+  /usr/include/libempathy-gtk/empathy-contact-selector.h
   /usr/include/libempathy-gtk/empathy-contact-widget.h
   /usr/include/libempathy-gtk/empathy-geometry.h
   /usr/include/libempathy-gtk/empathy-gtk-enum-types.h
@@ -436,8 +503,9 @@ Files included in the binary packages:
   /usr/include/libempathy-gtk/empathy-theme-boxes.h
   /usr/include/libempathy-gtk/empathy-theme-irc.h
   /usr/include/libempathy-gtk/empathy-theme-manager.h
-  /usr/include/libempathy-gtk/empathy-theme.h
   /usr/include/libempathy-gtk/empathy-ui-utils.h
+  /usr/include/libempathy-gtk/empathy-video-src.h
+  /usr/include/libempathy-gtk/empathy-video-widget.h
   /usr/lib/libempathy-gtk.dll.a
   /usr/lib/libempathy-gtk.la
   /usr/lib/pkgconfig/libempathy-gtk.pc
@@ -448,20 +516,29 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyCellRendererExpander.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyCellRendererText.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyChat.html
-  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyChatView.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyChatTextView.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyConf.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyContactListStore.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyContactListView.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyContactSelector.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyGstAudioSink.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyGstAudioSrc.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyGstVideoSrc.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyPresenceChooser.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathySmileyManager.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyThemeBoxes.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyThemeIrc.html
   /usr/share/gtk-doc/html/libempathy-gtk/EmpathyThemeManager.html
+  /usr/share/gtk-doc/html/libempathy-gtk/EmpathyVideoWidget.html
   /usr/share/gtk-doc/html/libempathy-gtk/home.png
   /usr/share/gtk-doc/html/libempathy-gtk/index.html
   /usr/share/gtk-doc/html/libempathy-gtk/index.sgml
   /usr/share/gtk-doc/html/libempathy-gtk/ix01.html
   /usr/share/gtk-doc/html/libempathy-gtk/left.png
-  /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-EmpathyConf.html
   /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-account-widget-irc.html
+  /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-account-widget-sip.html
   /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-account-widget.html
+  /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-chat-view.html
   /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-contact-dialogs.html
   /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-contact-menu.html
   /usr/share/gtk-doc/html/libempathy-gtk/libempathy-gtk-empathy-contact-widget.html
@@ -496,14 +573,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.1-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.23.6-1 -----
-Version bump.
-
------ version 0.23.3-1 -----
-Initial release for Cygwin.
+----- version 2.26.1-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
