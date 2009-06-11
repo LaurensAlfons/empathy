@@ -8,29 +8,29 @@ libraries. libempathy-gtk is a set of powerful widgets that can be
 embeded into any GNOME application.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   libbonobo2_0-2.24.1-1
   libcanberra-gtk0-0.12-1
   libcanberra0-0.12-1
   libdbus-glib_1_2-0.80-10
-  libebook1.2_9-2.26.1.1-1
+  libebook1.2_9-2.26.2-1
   libenchant1-1.4.2-10
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.1-1
+  libgconf2_4-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.2-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.1-1
-  libgstfarsight0.10_0-0.0.9-1
-  libgstinterfaces0.10_0-0.10.22-10
-  libgstreamer0.10_0-0.10.22-10
+  libglib2.0_0-2.20.3-1
+  libgstfarsight0.10_0-0.0.12-1
+  libgstinterfaces0.10_0-0.10.23-1
+  libgstreamer0.10_0-0.10.23-1
   libgtk2.0_0-2.16.1-1
   libintl8-0.17-10
   libmissioncontrol-client0-4.67-10
   libnotify1-0.4.5-10
-  libpanel-applet2_0-2.26.1-1
-  libpango1.0_0-1.24.1-1
-  libtelepathy-farsight0-0.0.6-1
-  libtelepathy-glib0-0.7.28-1
+  libpanel-applet2_0-2.26.2-1
+  libpango1.0_0-1.24.2-1
+  libtelepathy-farsight0-0.0.7-1
+  libtelepathy-glib0-0.7.31-1
   libX11_6-1.2-10
   libxml2-2.7.3-10
   telepathy-mission-control
@@ -42,20 +42,20 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gettext-devel-0.17-10
-  gnome-common-2.26.0-1
-  gnome-doc-utils-0.16.1-1
+  gnome-common-2.26.0-2
+  gnome-doc-utils-0.16.1-2
   gtk-doc-1.11-2
   intltool-0.40.6-1
   libtool-2.2.7a-12
   make-3.81-2
   pkg-config-0.23b-10
-  rarian-0.8.1-10
+  rarian-0.8.1-11
   sed-4.1.5-2
 
 Canonical website:
@@ -67,22 +67,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack empathy-2.26.1-X-src.tar.bz2
+  unpack empathy-2.26.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./empathy-2.26.1-X.cygport all
+  cygport ./empathy-2.26.2-X.cygport all
 
 This will create:
-  /usr/src/empathy-2.26.1-X-src.tar.bz2
-  /usr/src/empathy-2.26.1-X.tar.bz2
-  /usr/src/libempathy-common-2.26.1-X.tar.bz2
-  /usr/src/libempathy-devel-2.26.1-X.tar.bz2
-  /usr/src/libempathy-gtk-devel-2.26.1-X.tar.bz2
-  /usr/src/libempathy-gtk19-2.26.1-X.tar.bz2
-  /usr/src/libempathy23-2.26.1-X.tar.bz2
-  /usr/src/pyton-empathy-2.26.1-X.tar.bz2
-  /usr/src/pyton-empathygtk-2.26.1-X.tar.bz2
+  /usr/src/empathy-2.26.2-X-src.tar.bz2
+  /usr/src/empathy-2.26.2-X.tar.bz2
+  /usr/src/libempathy-common-2.26.2-X.tar.bz2
+  /usr/src/libempathy-devel-2.26.2-X.tar.bz2
+  /usr/src/libempathy-gtk-devel-2.26.2-X.tar.bz2
+  /usr/src/libempathy-gtk19-2.26.2-X.tar.bz2
+  /usr/src/libempathy23-2.26.2-X.tar.bz2
+  /usr/src/pyton-empathy-2.26.2-X.tar.bz2
+  /usr/src/pyton-empathygtk-2.26.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -572,6 +572,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.26.2-1 -----
+Version bump.
 
 ----- version 2.26.1-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
