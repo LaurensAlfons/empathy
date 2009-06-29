@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin libempathy-gtk19 libcanberra-gtk-devel libcanberra-devel libdbus-glib_1-devel libempathy-devel libenchant-devel libgconf2-devel libglib2.0-devel libgdk_pixbuf2.0-devel libglade2.0-devel libgstfarsight0.10-devel libgstinterfaces0.10-devel libgstreamer0.10-devel libgtk2.0-devel gettext libmissioncontrol-client-devel libtelepathy-glib-devel libpango1.0-devel libX11-devel
+requires: libempathy-gtk19 libcanberra-gtk-devel libcanberra-devel libdbus-glib_1-devel libempathy-devel libenchant-devel libgconf2-devel libglib2.0-devel libgdk_pixbuf2.0-devel libglade2.0-devel libgstfarsight0.10-devel libgstinterfaces0.10-devel libgstreamer0.10-devel libgtk2.0-devel gettext libmissioncontrol-client-devel libtelepathy-glib-devel libpango1.0-devel libX11-devel
 external-source: empathy
 sdesc: "GNOME Telepathy instant messaging library (GTK+ devel)"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 

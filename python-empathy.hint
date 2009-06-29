@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin libgcc1 libglib2.0_0 libempathy23 python python-gobject2
+requires: libgcc1 libglib2.0_0 libempathy23 python python-gobject2
 external-source: empathy
 sdesc: "GNOME Telepathy instant messaging Python bindings"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 
