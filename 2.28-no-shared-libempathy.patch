@@ -1,0 +1,72 @@
+libempathy shared libraries were disabled upstream in 2.29.1
+
+--- origsrc/empathy-2.28.1.1/Makefile.am	2009-10-26 11:58:13.000000000 -0500
++++ src/empathy-2.28.1.1/Makefile.am	2009-10-30 00:53:42.236131900 -0500
+@@ -1,4 +1,4 @@
+-SUBDIRS = tools extensions po data libempathy libempathy-gtk src docs help
++SUBDIRS = tools extensions po data libempathy libempathy-gtk src help
+ 
+ if HAVE_MEGAPHONE
+ SUBDIRS += megaphone
+--- origsrc/empathy-2.28.1.1/libempathy/Makefile.am	2009-10-26 11:58:13.000000000 -0500
++++ src/empathy-2.28.1.1/libempathy/Makefile.am	2009-10-30 00:38:29.419699700 -0500
+@@ -22,7 +22,7 @@ BUILT_SOURCES = 					\
+ 	empathy-enum-types.h				\
+ 	empathy-enum-types.c
+ 
+-lib_LTLIBRARIES = libempathy.la
++noinst_LTLIBRARIES = libempathy.la
+ 
+ libempathy_la_SOURCES =					\
+ 	empathy-account.c			\
+@@ -129,8 +129,7 @@ check_c_sources = \
+ include $(top_srcdir)/tools/check-coding-style.mk
+ check-local: check-coding-style
+ 
+-libempathy_includedir = $(includedir)/libempathy/
+-libempathy_include_HEADERS =			\
++noinst_HEADERS =			\
+ 	$(libempathy_headers)			\
+ 	empathy-enum-types.h
+ 
+@@ -205,9 +204,6 @@ ircnetworksdir = $(datadir)/empathy
+ ircnetworks_DATA =		\
+ 	irc-networks.xml
+ 
+-pkgconfigdir = $(libdir)/pkgconfig
+-pkgconfig_DATA = libempathy.pc
+-
+ EXTRA_DIST = 			\
+ 	empathy-marshal.list	\
+ 	$(stylesheet_DATA)	\
+--- origsrc/empathy-2.28.1.1/libempathy-gtk/Makefile.am	2009-10-26 11:58:13.000000000 -0500
++++ src/empathy-2.28.1.1/libempathy-gtk/Makefile.am	2009-10-30 00:38:44.229720200 -0500
+@@ -22,7 +22,7 @@ BUILT_SOURCES = 					\
+ 	empathy-gtk-enum-types.h			\
+ 	empathy-gtk-enum-types.c
+ 
+-lib_LTLIBRARIES = libempathy-gtk.la
++noinst_LTLIBRARIES = libempathy-gtk.la
+ 
+ libempathy_gtk_handwritten_source =            	\
+ 	empathy-account-chooser.c		\
+@@ -135,8 +135,7 @@ check_c_sources = \
+ include $(top_srcdir)/tools/check-coding-style.mk
+ check-local: check-coding-style
+ 
+-libempathy_gtk_includedir = $(includedir)/libempathy-gtk/
+-libempathy_gtk_include_HEADERS =		\
++noinst_HEADERS =		\
+ 	$(libempathy_gtk_headers)		\
+ 	empathy-gtk-enum-types.h
+ 
+@@ -215,9 +214,6 @@ empathy-gtk-enum-types.c: Makefile $(lib
+ 	&& cp xgen-gtc $(@F) \
+ 	&& rm -f xgen-gtc
+ 
+-pkgconfigdir = $(libdir)/pkgconfig
+-pkgconfig_DATA = libempathy-gtk.pc
+-
+ EXTRA_DIST =			\
+ 	$(ui_DATA)
+ 
