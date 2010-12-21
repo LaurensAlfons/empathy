@@ -3,4 +3,9 @@ inherit python gnome2
 DESCRIPTION="GNOME IM client based on Telepathy and Mission Control"
 HOMEPAGE="http://live.gnome.org/Empathy"
 
-PATCH_URI="2.30.1.1-nst-no-undefined.patch"
+PATCH_URI="
+	2.30.1.1-nst-no-undefined.patch
+	2.32.2-no-ca-file.patch
+"
+
+CYGCONF_ARGS="--without-ca-file"

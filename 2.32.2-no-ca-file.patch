@@ -1,0 +1,12 @@
+--- origsrc/empathy-2.32.2/libempathy/empathy-tls-verifier.c	2010-11-18 08:46:43.000000000 -0600
++++ src/empathy-2.32.2/libempathy/empathy-tls-verifier.c	2010-12-21 01:34:52.518818300 -0600
+@@ -44,7 +44,9 @@ enum {
+ };
+ 
+ static const gchar* system_ca_paths[] = {
++#ifdef GTLS_SYSTEM_CA_FILE
+   GTLS_SYSTEM_CA_FILE,
++#endif
+   NULL,
+ };
+ 
