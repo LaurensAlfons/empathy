@@ -5,7 +5,4 @@ HOMEPAGE="http://live.gnome.org/Empathy"
 
 PATCH_URI="
 	2.30.1.1-nst-no-undefined.patch
-	2.32.2-no-ca-file.patch
 "
-
-CYGCONF_ARGS="--without-ca-file"

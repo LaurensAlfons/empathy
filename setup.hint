@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: GConf2 libcanberra-gtk0 libcanberra0 libchamplain-gtk0.8_0 libchamplain0.8_0 libclutter-gtk0.10_0 libclutter1.0_0 libdbus-glib_1_2 libebook1.2_10 libenchant1 libfolks-telepathy1 libfolks1 libgconf2_4 libgcr0 libgdk_pixbuf2.0_0 libgeoclue0 libglib2.0_0 libgnutls26 libgstfarsight0.10_0 libgstinterfaces0.10_0 libgstreamer0.10_0 libgtk2.0_0 libintl8 libnotify1 libpango1.0_0 libtelepathy-farsight0 libtelepathy-glib0 libtelepathy-logger1 libunique1.0_0 libwebkit1.0_2 libX11_6 libxml2 telepathy-mission-control
+requires: libcanberra-gtk3_0 libcanberra0 libchamplain-gtk0.10_0 libchamplain0.10_0 libclutter-gtk1.0_0 libclutter1.0_0 libdbus-glib_1_2 libebook1.2_10 libenchant1 libfolks-telepathy22 libfolks22 libgcr3_0 libgdk_pixbuf2.0_0 libgeoclue0 libglib2.0_0 libgnome-keyring0 libgnutls26 libgstfarsight0.10_0 libgstinterfaces0.10_0 libgstreamer0.10_0 libgtk3_0 libintl8 libnotify4 libpango1.0_0 libtelepathy-farsight0 libtelepathy-glib0 libtelepathy-logger2 libwebkitgtk3.0_0 libX11_6 libxml2 telepathy-mission-control
 sdesc: "GNOME Telepathy instant messaging client"
 ldesc: "Empathy consists of a rich set of reusable instant messaging 
 widgets, and a GNOME client using those widgets. It uses Telepathy and 
