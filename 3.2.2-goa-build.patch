@@ -7,14 +7,3 @@
 +	-no-undefined \
          -module \
          -avoid-version
---- origsrc/empathy-3.2.2/goa-mc-plugin/mcp-account-manager-goa.c	2011-11-14 08:41:42.000000000 -0600
-+++ src/empathy-3.2.2/goa-mc-plugin/mcp-account-manager-goa.c	2011-11-21 19:35:29.842912300 -0600
-@@ -428,7 +428,7 @@ mcp_account_manager_goa_get (const McpAc
- 
- static gboolean
- account_is_in_goa (const McpAccountStorage *self,
--    const gchar *account)
-+    const gchar *acct)
- {
-   McpAccountManagerGoaPrivate *priv = GET_PRIVATE (self);
- 
