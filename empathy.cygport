@@ -1,0 +1,22 @@
+inherit gnome2
+
+NAME="empathy"
+VERSION=3.4.2.3
+RELEASE=2
+CATEGORY="Gnome Net"
+SUMMARY="GNOME Telepathy instant messaging client"
+DESCRIPTION="Empathy is a messaging program which supports text, voice, and
+video chat and file transfers over many different protocols. Empathy uses
+Telepathy for protocol support and has a user interface based on Gossip."
+HOMEPAGE="http://live.gnome.org/Empathy"
+
+PATCH_URI="
+	2.30.1.1-nst-no-undefined.patch
+	3.2.2-goa-build.patch
+"
+
+REQUIRES="telepathy-gabble telepathy-haze telepathy-idle telepathy-logger telepathy-mission-control"
+
+CYGCONF_ARGS="--libexecdir=/usr/lib/${PN}"
+
+KEEP_LA_FILES="none"
