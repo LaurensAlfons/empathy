@@ -1,0 +1,11 @@
+--- origsrc/empathy-3.6.2/data/themes/Makefile.am	2012-10-09 09:12:45.000000000 -0500
++++ src/empathy-3.6.2/data/themes/Makefile.am	2012-12-20 00:38:46.367905400 -0600
+@@ -37,7 +37,7 @@ pgo_messageStyle = \
+ 	$(NULL)
+ 
+ install-themes: $(themes)
+-	for f in $^; do \
++	for f in $(themes); do \
+ 		mkdir -p `dirname $(DESTDIR)$(themesdir)/$$f`; \
+ 		$(INSTALL_DATA) $(srcdir)/$$f $(DESTDIR)$(themesdir)/$$f; \
+ 	done
