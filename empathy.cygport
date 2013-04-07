@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="empathy"
-VERSION=3.6.3
+VERSION=3.6.4
 RELEASE=1
 CATEGORY="Gnome Net"
 SUMMARY="GNOME Telepathy instant messaging client"
