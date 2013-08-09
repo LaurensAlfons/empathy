@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="empathy"
-VERSION=3.6.4
+VERSION=3.8.3
 RELEASE=1
-CATEGORY="Gnome Net"
+CATEGORY="Net"
 SUMMARY="GNOME Telepathy instant messaging client"
 DESCRIPTION="Empathy is a messaging program which supports text, voice, and
 video chat and file transfers over many different protocols. Empathy uses
@@ -18,4 +18,4 @@ PATCH_URI="
 
 REQUIRES="telepathy-gabble telepathy-haze telepathy-idle telepathy-logger telepathy-mission-control"
 
-CYGCONF_ARGS="--libexecdir=/usr/lib/${PN} --disable-ubuntu-online-accounts"
+CYGCONF_ARGS="--disable-ubuntu-online-accounts"
