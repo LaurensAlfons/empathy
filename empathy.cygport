@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="empathy"
 VERSION=3.8.6
-RELEASE=1
+RELEASE=2
 CATEGORY="Net"
 SUMMARY="GNOME Telepathy instant messaging client"
 DESCRIPTION="Empathy is a messaging program which supports text, voice, and
