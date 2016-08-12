@@ -9,3 +9,14 @@
  		mkdir -p `dirname $(DESTDIR)$(themesdir)/$$f`; \
  		$(INSTALL_DATA) $(srcdir)/$$f $(DESTDIR)$(themesdir)/$$f; \
  	done
+--- origsrc/empathy-3.12.12/src/Makefile.am	2014-08-28 05:08:19.000000000 -0500
++++ src/empathy-3.12.12/src/Makefile.am	2016-08-11 22:17:52.408853500 -0500
+@@ -212,7 +212,7 @@ chat-manager-interface.h: Makefile.am Ch
+ 		--interface-prefix org.gnome.Empathy. \
+ 		--c-namespace EmpathyGen \
+ 		--generate-c-code chat-manager-interface \
+-		Chat_Manager.xml
++		$(srcdir)/Chat_Manager.xml
+ 
+ BUILT_SOURCES = \
+ 	$(nodist_empathy_chat_SOURCES) \
