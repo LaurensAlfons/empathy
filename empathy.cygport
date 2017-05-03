@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="empathy"
-VERSION=3.12.12
+VERSION=3.12.13
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="GNOME Telepathy instant messaging client"
@@ -13,7 +13,6 @@ HOMEPAGE="http://live.gnome.org/Empathy"
 PATCH_URI="
 	3.2.2-goa-build.patch
 	3.6.2-vpath.patch
-	3.12.12-parallel-make.patch
 	3.12.12-clutter-gst3.patch
 "
 
